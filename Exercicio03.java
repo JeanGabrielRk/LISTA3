@@ -9,7 +9,7 @@ public class Exercicio03 {
         String nome;
         double salario, totalvendas, salariofinal;
 
-        System.out.println("Digite o nome do vendedor: ");
+        System.out.println("Digite o nome do vendedor(a): ");
         nome = leitor.next();
 
         System.out.println("Digite o salario: ");
