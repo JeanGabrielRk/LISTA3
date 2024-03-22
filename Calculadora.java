@@ -60,4 +60,20 @@ public class Calculadora {
             return descontado;
         }
     }
+
+    public static double mediapreco(double vlrcusto, double vlrvenda){
+        double custodd = vlrcusto - vlrvenda;
+
+        if (vlrcusto < vlrvenda){
+            System.out.println("Prejuizo: ");
+        }
+        else if (vlrvenda > vlrcusto){
+            System.out.println("Lucro: ");
+        }
+        else{
+            System.out.println("Empate: ");
+        }
+
+        return custodd;
+    }
 }
