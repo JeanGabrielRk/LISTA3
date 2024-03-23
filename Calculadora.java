@@ -117,4 +117,11 @@ public class Calculadora {
             return aumento;
         }
     }
+
+    public static double reajustesalarial(double salariofunc, double salariomin){
+        double reajuste;
+
+        reajuste = salariomin - salariofunc;
+        return reajuste;
+    }
 }
