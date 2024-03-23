@@ -124,4 +124,26 @@ public class Calculadora {
         reajuste = salariomin - salariofunc;
         return reajuste;
     }
+
+    public static double abono(String sexo, int idade, double salariofunc){
+        double abono = 0;
+
+        if (sexo.equals("M")){
+            if (idade >= 30){
+                abono = 100;
+            }
+            else {
+                abono = 50;
+            }
+        }
+        else if (sexo.equals("F")){
+            if (idade >= 30){
+                abono = 200;
+            }
+            else {
+                abono = 80;
+            }
+        }
+        return abono;
+    }
 }
