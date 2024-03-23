@@ -60,4 +60,19 @@ public class Verificacao {
         }
     }
 
+    public static String classificacaoEscolar(double notafinal){
+
+        if (notafinal >= 8 && notafinal <= 10) {
+            return "A";
+        } else if (notafinal >= 7 && notafinal < 8) {
+            return "B";
+        } else if (notafinal >= 6 && notafinal < 7) {
+            return "C";
+        } else if (notafinal >= 5 && notafinal < 6) {
+            return "D";
+        } else {
+            return "R";
+        }
+    }
+
 }

@@ -22,18 +22,3 @@ public class Exercicio24 {
         System.out.println("Resultado final: " + notafinal);
     }
 }
-
-
-
-/*import java.util.Scanner;
-
-public class Exercicio24 {
-
-    public static void executar(){
-
-        Scanner leitor = new Scanner(System.in);
-
-        
-    }
-}
- */
