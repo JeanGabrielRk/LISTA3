@@ -96,4 +96,25 @@ public class Calculadora {
             return 0;
         }
     }
+
+    public static double aumento(double salario){
+        double aumento;
+
+        if (salario < 3000){
+            aumento = (50 * salario) / 100;
+            return aumento;
+        }
+        else if (salario >= 3000 && salario < 10000){
+            aumento = (20 * salario) / 100;
+            return aumento;
+        }
+        else if (salario >= 10000 && salario < 20000){
+            aumento = (15 * salario) / 100;
+            return aumento;
+        }
+        else {
+            aumento = (10 * salario) / 100;
+            return aumento;
+        }
+    }
 }
