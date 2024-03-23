@@ -162,5 +162,23 @@ public class Calculadora {
 
         return valor;
     }
+
+    public static double valorluz(int tipo, double kwh){
+        double total;
+
+        if (tipo == 1){
+            total = kwh * 0.60;
+        }
+        else if (tipo == 2){
+            total = kwh * 0.48;
+        }
+        else if (tipo == 3){
+            total = kwh * 1.29;
+        }
+        else {
+            return 0;
+        }
+        return total;
+    }
     
 }
