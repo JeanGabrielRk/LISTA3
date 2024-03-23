@@ -220,4 +220,14 @@ public class Calculadora {
 
         return pesoIdeal;
     }
+
+    public static double meidaponderada(double nota1, double nota2, double nota3){
+        double pesolab = 2;
+        double pesossem = 3;
+        double pesoexame = 5;
+
+        double mpfinal = (nota1 * pesolab + nota2 * pesossem + nota3 * pesoexame) / (pesolab + pesossem + pesoexame);
+
+        return mpfinal;
+    }
 }
