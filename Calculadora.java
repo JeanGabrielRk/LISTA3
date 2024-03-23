@@ -76,4 +76,24 @@ public class Calculadora {
 
         return custodd;
     }
+
+    public static double descontocombustivel(int opcao, double valorcarro){
+        double desconto;
+
+        if (opcao == 1){
+            desconto = (25 * valorcarro) / 100;
+            return desconto;
+        }
+        else if (opcao == 2){
+            desconto = (21 * valorcarro) / 100;
+            return desconto;
+        }
+        else if (opcao == 3){
+            desconto = (14 * valorcarro) / 100;
+            return desconto;
+        }
+        else {
+            return 0;
+        }
+    }
 }

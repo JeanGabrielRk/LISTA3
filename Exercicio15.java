@@ -6,12 +6,22 @@ public class Exercicio15 {
 
         Scanner leitor = new Scanner(System.in);
 
-        int op = 1;
+        int opcao;
+        double valorcarro;
+        double desconto;
 
         do {
 
-            System.out.println("Informe o valor do veiculo: ")
+            System.out.println("Informe o valor do veiculo: ");
+            valorcarro = leitor.nextDouble();
 
-        } while (op != 0);
+            System.out.println("Selecione uma opção: 1 - Alcool, 2 - Gasolina, 3 - Diesel");
+            opcao = leitor.nextInt();
+
+            desconto = Calculadora.descontocombustivel(opcao, valorcarro);
+
+            System.out.println("Desconto: " + desconto);
+
+        } while (valorcarro != 0);
     }
 }
