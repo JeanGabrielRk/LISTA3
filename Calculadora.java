@@ -147,5 +147,20 @@ public class Calculadora {
         return abono;
     }
 
+    public static double horaaula(int nivel, double horas){
+        double valor;
+
+        if (nivel == 1){
+            valor = horas * 12;
+        }
+        else if (nivel == 2){
+            valor = horas * 17;
+        }
+        else {
+            valor = horas * 25;
+        }
+
+        return valor;
+    }
     
 }
